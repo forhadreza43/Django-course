@@ -23,4 +23,5 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('contact/', views.contact, name='contact'),
     path('firstapp/', include('firstapp.urls')),
+    path('secondapp/', include('secondapp.urls')),
 ]
