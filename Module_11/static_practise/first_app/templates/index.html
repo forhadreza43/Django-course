@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}
+<title>index</title>
+{% endblock %}
+{% block content %}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Company Name</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        {% for user in context %}
+        <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.phone }}</td>
+            <td>{{ user.company.name }}</td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+
+
+
+<img src="{% static 'images/bird2.jpg'%}" alt="Bird 2">
+{% endblock %}

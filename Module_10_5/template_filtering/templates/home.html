@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Welcome to the home page</p>
+    <p>{{ age | add:"5" }}</p>
+    <p>{{ num | add:"6" }}</p>
+    <p>{{ name | capfirst }}</p>
+    <p>{{ month | cut:"-" }}</p>
+    <p>{{friends | dictsort:'name'}}</p>
+    <p>{{ hobbies | first }}</p>
+    <p>{{ hobbies | last }}</p>
+    <p>{{ hobbies | length }}</p>
+    <p>{{ hobbies | random }}</p>
+    <p>{{ hobbies | slice:":2" }}</p>
+    <p>{{ hobbies | unordered_list }}</p>
+    <p>{{ hobbies | urlencode }}</p>
+    <p>{{ hobbies | urlize }}</p>
+    <p>{{ hobbies | wordcount }}</p>
+    <p>{{ hobbies | linenumbers }}</p>
+    <p>{{ sentence | lower }}</p>
+    <p>{{ sentence | upper }}</p>
+    <p>{{ sentence | title }}</p>
+    <p>{{ date | time:"H:i" }}</p>
+    <p>{{ date | time:"H\h:i\m" }}</p>
+    <p>{{ date | time:"d/m/Y" }}</p>
+
+    <p>{{ txt | truncatechars:8 }}</p>
+    <p>{{ blog | truncatewords:30 }}</p>
+    <p>You have {{ num_messages }} message{{ num_messages | pluralize }}.</p>
+    <p>You have {{ cherry }} cherry{{ cherry | pluralize:"y,ies" }}.</p>
+    <p>You have {{ tomato }} tomato{{ tomato | pluralize:"es" }}.</p>
+    <p>{{name | make_list}}</p>
+
+
+
+
+
+</body>
+
+</html>
